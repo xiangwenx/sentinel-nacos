@@ -29,7 +29,7 @@ java -Dserver.port=8080 \
 ```
 java -jar -Dnacos_server_addr=127.0.0.1:8848
  -Dnacos_username=nacos -Dnacos_password=naocs -Dnacos_namespace=sentinel-config -Dnacos_group=SENTINEL_GROUP
-###  nacos_namespace不要写public，这是个坑，nacos默认public持久化时tenant_id是为空的，会导致查询不到sentinel的配置
+###    nacos_namespace不要写public，这是个坑，nacos默认public持久化时tenant_id是为空的，会导致查询不到sentinel的配置
 ```
 
 上述命令中我们指定几个 JVM 参数，其中 `-Dserver.port=8080` 是 Spring Boot 的参数，
