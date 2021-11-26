@@ -27,7 +27,7 @@ java -Dserver.port=8080 \
 
 增加nacos持久化：
 ```
-java -jar -Dnacos_server_addr=127.0.0.1:8848
+java  -jar -Dnacos_server_addr=127.0.0.1:8848
  -Dnacos_username=nacos -Dnacos_password=naocs -Dnacos_namespace=sentinel-config -Dnacos_group=SENTINEL_GROUP
 ###   nacos_namespace不要写public，这是个坑，nacos默认public持久化时tenant_id是为空的，会导致查询不到sentinel的配置
 ```
